@@ -24,9 +24,9 @@
     </div>
 
     <div th:if="${!#strings.isEmpty(theme.config.post.invalid_tips_day) && updateInterval > T(java.lang.Long).parseLong(theme.config.post.invalid_tips_day)}"
-         class="card tips brightness"><i class="ri-close-line click-close" data-close=".tips"></i>本文最后更新于
+         class="card tips brightness"><i class="ri-close-line click-close" data-close=".tips"></i>本文最後更新於
         [[${#dates.format(post.status.lastModifyTime,'yyyy-MM-dd')}]]，距今已有 [[${updateInterval}]]
-        天，若文章内容或图片链接失效，请留言反馈。
+        天，若文章內容或圖片連結失效，請留言反饋。
     </div>
 
     <div th:if="${!#strings.isEmpty(post.metadata.annotations.get('tips'))}" class="card tips brightness"><i
@@ -91,7 +91,7 @@
     </th:block>
 
     <div class="card card-content" id="comment-wrapper" th:if="${enableComment}">
-        <h3 class="comment-title">评论</h3>
+        <h3 class="comment-title">評論</h3>
         <div class="comment-section" th:data-id="${post.metadata.name}" th:data-target="${type}"></div>
     </div>
 </th:block>

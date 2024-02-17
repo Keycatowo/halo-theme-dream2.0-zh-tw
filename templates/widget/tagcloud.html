@@ -7,10 +7,10 @@
      enableTagsColor = ${theme.config.sidebar.enable_tag_color}">
 
     <div class="card-title">
-        <i class="ri-cloud-line card-title-label"></i><span>标签云</span>
+        <i class="ri-cloud-line card-title-label"></i><span>標籤雲</span>
         <a th:if="${tags.hasNext}" class="card-more" th:href="@{/tags}">更多<i class="ri-arrow-right-double-line"></i></a>
     </div>
-    <div th:if="${isEmpty}" class="card-empty">暂无标签</div>
+    <div th:if="${isEmpty}" class="card-empty">暫無標籤</div>
     <div th:unless="${isEmpty}" class="card-content">
         <a
           th:each="tag : ${tags}"

@@ -24,13 +24,13 @@
         <span class="journal-operation-item">
           <a class="like" th:data-id="${moment.metadata.name}" th:data-likes="${moment.stats.upvote}">
             <i class="ri-heart-3-line"></i>
-            <em th:text="${(moment.stats.upvote != 0)? moment.stats.upvote : '喜欢'}"></em>
+            <em th:text="${(moment.stats.upvote != 0)? moment.stats.upvote : '喜歡'}"></em>
           </a>
         </span>
         <span class="journal-operation-item" th:if="${enableComment}">
           <a class="comment">
             <i class="ri-message-3-line"></i>
-            <em th:text="${(moment.stats.totalComment != 0)? moment.stats.totalComment : '评论'}"></em>
+            <em th:text="${(moment.stats.totalComment != 0)? moment.stats.totalComment : '評論'}"></em>
           </a>
         </span>
         <span class="journal-operation-item" th:if="${enableShare}">

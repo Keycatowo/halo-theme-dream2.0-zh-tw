@@ -60,7 +60,7 @@
                 </th:block>
             </nav>
             <div th:if="${pluginFinder.available('PluginSearchWidget')}" class="navbar-search">
-                <button onclick="javascript:SearchWidget.open();" class="submit" aria-label="搜索按钮" style="border-radius: 17px;"><i class="ri-search-line"></i></button>
+                <button onclick="javascript:SearchWidget.open();" class="submit" aria-label="搜尋按鈕" style="border-radius: 17px;"><i class="ri-search-line"></i></button>
             </div>
             <i class="ri-search-line navbar-searchicon" onclick="javascript:SearchWidget.open();"></i>
         </div>
@@ -79,34 +79,34 @@
                 <li class="item" th:each="itemData,sindex :${theme.config.sidebar.custom_stats}" th:switch="${itemData.type}">
                     <div th:case="visit">
                         <i class="ri-pie-chart-line"></i>
-                        <span>累计收获 <strong th:text="${stats.visit}"></strong> 次访问</span>
+                        <span>累計收穫 <strong th:text="${stats.visit}"></strong> 次訪問</span>
                     </div>
                     <div th:case="upvote">
                         <i class="ri-thumb-up-line"></i>
-                        <span>累计收获 <strong th:text="${stats.upvote}"></strong> 个点赞</span>
+                        <span>累計收穫 <strong th:text="${stats.upvote}"></strong> 個點贊</span>
                     </div>
                     <div th:case="comment">
                         <i class="ri-message-2-line"></i>
-                        <span>累计收到 <strong th:text="${stats.comment}"></strong> 条评论</span>
+                        <span>累計收到 <strong th:text="${stats.comment}"></strong> 條評論</span>
                     </div>
                     <div th:case="category">
                         <i class="ri-apps-line"></i>
-                        <span>累计创建 <strong th:text="${stats.category}"></strong> 个分类</span>
+                        <span>累計建立 <strong th:text="${stats.category}"></strong> 個分類</span>
                     </div>
                     <div th:case="tag" th:with="tagsList = ${tagFinder.listAll()}, tags = ${#lists.size(tagsList)}">
                         <i class="ri-price-tag-2-line"></i>
-                        <span>累计创建 <strong th:text="${tags}"></strong> 个标签</span>
+                        <span>累計建立 <strong th:text="${tags}"></strong> 個標籤</span>
                     </div>
                     <div th:case="*">
                         <i class="ri-edit-circle-line"></i>
-                        <span>累计撰写 <strong th:text="${stats.post}"></strong> 篇文章</span>
+                        <span>累計撰寫 <strong th:text="${stats.post}"></strong> 篇文章</span>
                     </div>
                 </li>
             </ul>
             <ul class="navbar-slideout-menu not-toc">
                 <li>
                     <a class="link panel" href="#" rel="nofollow">
-                        <span>导航</span>
+                        <span>導航</span>
                         <i class="ri-arrow-right-s-line"></i>
                     </a>
                     <ul class="slides panel-body panel-side-menu">
@@ -154,7 +154,7 @@
                 </li>
             </ul>
             <ul th:if="${theme.config.basic_style.drawer_toc}" class="navbar-slideout-menu is-toc">
-                <a class="link in" href="#" rel="nofollow"><span>目录</span></a>
+                <a class="link in" href="#" rel="nofollow"><span>目錄</span></a>
                 <div class="toc-content">
                 </div>
             </ul>

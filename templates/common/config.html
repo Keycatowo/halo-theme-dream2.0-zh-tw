@@ -68,7 +68,7 @@
         clipboardData.setData("text/plain", text + "\\n' + #strings.escapeJavaScript(theme.config.basic_info.copy_explain) + '");
       }
     });'})]
-    /** 主题配置 */
+    /** 主題配置 */
     const DreamConfig = {};
     DreamConfig["theme_version"] = [[${theme.spec.version}]];
     DreamConfig["theme_base"] = "[(${#theme.assets('/')})]";
@@ -94,7 +94,7 @@
       [(${!#strings.isEmpty(theme.config.page_config.journals_share_image)?'DreamConfig["journals_share_image"] = "' + theme.config.page_config.journals_share_image + '";': ''})]
       [(${!#strings.isEmpty(theme.config.sidebar.meting_api)?'var meting_api = "' + theme.config.sidebar.meting_api + '";': ''})]
 
-    /** 配置主题模式 */
+    /** 配置主題模式 */
     DreamConfig["default_theme"] = '[(${theme.config.basic_style.default_theme})]';
     (function(){
       let isNight = DreamConfig.default_theme === 'system'? matchMedia('(prefers-color-scheme: dark)').matches : localStorage.getItem('night') || DreamConfig.default_theme === 'night';

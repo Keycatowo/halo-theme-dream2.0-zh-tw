@@ -4,9 +4,9 @@
      class="card card-transparent">
   <nav class="pagination" role="navigation" aria-label="pagination">
     <a th:href="${data.prevUrl}"
-       th:class="'pagination-previous' + ${data.hasPrevious()?'':' is-invisible is-hidden-mobile'}">上一页</a>
+       th:class="'pagination-previous' + ${data.hasPrevious()?'':' is-invisible is-hidden-mobile'}">上一頁</a>
     <a th:href="${data.nextUrl}"
-       th:class="'pagination-next' + ${data.hasNext()?'':' is-invisible is-hidden-mobile'}">下一页</a>
+       th:class="'pagination-next' + ${data.hasNext()?'':' is-invisible is-hidden-mobile'}">下一頁</a>
     <ul class="pagination-list is-hidden-mobile"
         th:with="p=${T(java.lang.Math).ceil(T(java.lang.Double).parseDouble(data.page) / 5.0) },start = ${(p * 5) - 5  +1 }, end=${p * 5}">
       <th:block th:if="${data.totalPages <= 9}">

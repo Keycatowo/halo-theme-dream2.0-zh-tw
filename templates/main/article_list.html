@@ -7,7 +7,7 @@
       <a th:href="${post.status.permalink}">
         <div class="cover-image" th:style="'background-image: url(' + ${thumbnail} + ')'"></div>
         <div class="details">
-          <h2 class="title"><span class="top" th:if="${post.spec.pinned}">置顶</span>[[${post.spec.title}]]</h2>
+          <h2 class="title"><span class="top" th:if="${post.spec.pinned}">置頂</span>[[${post.spec.title}]]</h2>
           <ul class="breadcrumb">
             <li th:text="${#dates.format(post.spec.publishTime, 'yyyy-MM-dd HH:mm')}"></li>
             <li><i class="ri-eye-line"></i>[[${post.stats.visit}]]</li>
@@ -34,7 +34,7 @@
       </a>
       <div class="card-content main">
         <h2 class="title">
-          <span class="top" th:if="${post.spec.pinned}">置顶</span><a
+          <span class="top" th:if="${post.spec.pinned}">置頂</span><a
           th:href="${post.status.permalink}" th:text="${post.spec.title}"></a>
         </h2>
         <div class="main-content" th:text="${post.status.excerpt}"></div>
@@ -63,7 +63,7 @@
       class="card widget card-small">
       <div class="card-content main">
         <h2 class="title">
-          <span class="top" th:if="${post.spec.pinned}">置顶</span><a
+          <span class="top" th:if="${post.spec.pinned}">置頂</span><a
           th:href="${post.status.permalink}" th:text="${post.spec.title}"></a>
         </h2>
         <div class="main-content" th:text="${post.status.excerpt}"></div>
@@ -92,7 +92,7 @@
 
     <a th:if="${post.spec.pinned && thumbnail_mode == 'fold'}" class="card widget card-fold"
        th:href="${post.status.permalink}">
-      <h2 class="title"><span class="top">置顶</span>
+      <h2 class="title"><span class="top">置頂</span>
         <p th:text="${post.spec.title}"></p></h2>
       <p th:text="${#dates.format(post.spec.publishTime, 'yyyy-MM-dd')}"></p>
     </a>
@@ -106,7 +106,7 @@
       </a>
       <div class="card-content main">
         <h2 class="title">
-          <span class="top" th:if="${post.spec.pinned}">置顶</span><a
+          <span class="top" th:if="${post.spec.pinned}">置頂</span><a
           th:href="${post.status.permalink}" th:text="${post.spec.title}"></a>
         </h2>
         <div class="meta">
@@ -152,7 +152,7 @@
           </li>
         </ul>
         <h2 class="title">
-          <span class="top" th:if="${post.spec.pinned}">置顶</span>
+          <span class="top" th:if="${post.spec.pinned}">置頂</span>
           <a
             th:href="${post.status.permalink}" th:text="${post.spec.title}"></a>
         </h2>

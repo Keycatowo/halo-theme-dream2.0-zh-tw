@@ -9,78 +9,78 @@ spec:
   formSchema:
     - $formkit: radio
       name: enable_copyright
-      label:  开启文章版权声明
+      label:  開啟文章版權宣告
       value: ""
-      help: '当前配置将覆盖主题中的默认配置。'
+      help: '當前配置將覆蓋主題中的預設配置。'
       options:
         - value: "true"
-          label:  开启
+          label:  開啟
         - value: "false"
-          label:  关闭
+          label:  關閉
         - value: ""
-          label:  跟随默认配置
+          label:  跟隨預設配置
     - $formkit: select
       name: thumbnail_mode
-      label: 文章列表缩略图模式
+      label: 文章列表縮圖模式
       value: ""
-      help: '文章在列表的缩略图模式，除网格布局外，当前配置将覆盖主题中的默认配置。'
+      help: '文章在列表的縮圖模式，除網格佈局外，當前配置將覆蓋主題中的預設配置。'
       options:
         - value: default
-          label:  默认模式
+          label:  預設模式
         - value: back
-          label:  背景图模式
+          label:  背景圖模式
         - value: small
-          label:  小图模式（左侧）
+          label:  小圖模式（左側）
         - value: small-right
-          label:  小图模式（右侧）
+          label:  小圖模式（右側）
         - value: small-alter
-          label:  小图模式（交替）
+          label:  小圖模式（交替）
         - value: fold
-          label:  折叠模式
+          label:  摺疊模式
         - value: ""
-          label:  跟随默认配置
+          label:  跟隨預設配置
     - $formkit: text
       name: tips
       label:  文章提示
       value: ""
-      placeholder: '请输入提示内容'
-      help: '在文章顶部显示一条提示。'
+      placeholder: '請輸入提示內容'
+      help: '在文章頂部顯示一條提示。'
     - $formkit: radio
       name: enable_katex
-      label:  KaTeX 公式支持
+      label:  KaTeX 公式支援
       value: ""
-      help: '博客通过 KaTeX 做数学公式渲染，当前配置将覆盖主题中的默认配置。'
+      help: '部落格透過 KaTeX 做數學公式渲染，當前配置將覆蓋主題中的預設配置。'
       options:
         - value: "true"
-          label:  开启
+          label:  開啟
         - value: "false"
-          label:  关闭
+          label:  關閉
         - value: ""
-          label:  跟随默认配置
+          label:  跟隨預設配置
     - $formkit: radio
       name: enable_share
-      label:  开启文章分享
+      label:  開啟文章分享
       value: ""
-      help: '当前配置将覆盖主题中的默认配置。'
+      help: '當前配置將覆蓋主題中的預設配置。'
       options:
         - value: "true"
-          label:  开启
+          label:  開啟
         - value: "false"
-          label:  关闭
+          label:  關閉
         - value: ""
-          label:  跟随默认配置
+          label:  跟隨預設配置
     - $formkit: radio
       name: enable_donate
-      label:  开启文章打赏
+      label:  開啟文章打賞
       value: ""
-      help: '当前配置将覆盖主题中的默认配置。'
+      help: '當前配置將覆蓋主題中的預設配置。'
       options:
         - value: "true"
-          label:  开启
+          label:  開啟
         - value: "false"
-          label:  关闭
+          label:  關閉
         - value: ""
-          label:  跟随默认配置
+          label:  跟隨預設配置
 
 ---
 
@@ -95,55 +95,55 @@ spec:
   formSchema:
     - $formkit: radio
       name: enable_copyright
-      label:  开启文章版权声明
+      label:  開啟文章版權宣告
       value: ""
-      help: '当前配置将覆盖主题中的默认配置。'
+      help: '當前配置將覆蓋主題中的預設配置。'
       options:
         - value: "true"
-          label:  开启
+          label:  開啟
         - value: "false"
-          label:  关闭
+          label:  關閉
         - value: ""
-          label:  跟随默认配置
+          label:  跟隨預設配置
     - $formkit: text
       name: tips
       label:  文章提示
       value: ""
-      placeholder: '请输入提示内容'
-      help: '在文章顶部显示一条提示。'
+      placeholder: '請輸入提示內容'
+      help: '在文章頂部顯示一條提示。'
     - $formkit: radio
       name: enable_katex
-      label:  KaTeX 公式支持
+      label:  KaTeX 公式支援
       value: ""
-      help: '博客通过 KaTeX 做数学公式渲染，当前配置将覆盖主题中的默认配置。'
+      help: '部落格透過 KaTeX 做數學公式渲染，當前配置將覆蓋主題中的預設配置。'
       options:
         - value: "true"
-          label:  开启
+          label:  開啟
         - value: "false"
-          label:  关闭
+          label:  關閉
         - value: ""
-          label:  跟随默认配置
+          label:  跟隨預設配置
     - $formkit: radio
       name: enable_share
-      label:  开启文章分享
+      label:  開啟文章分享
       value: ""
-      help: '当前配置将覆盖主题中的默认配置。'
+      help: '當前配置將覆蓋主題中的預設配置。'
       options:
         - value: "true"
-          label:  开启
+          label:  開啟
         - value: "false"
-          label:  关闭
+          label:  關閉
         - value: ""
-          label:  跟随默认配置
+          label:  跟隨預設配置
     - $formkit: radio
       name: enable_donate
-      label:  开启文章打赏
+      label:  開啟文章打賞
       value: ""
-      help: '当前配置将覆盖主题中的默认配置。'
+      help: '當前配置將覆蓋主題中的預設配置。'
       options:
         - value: "true"
-          label:  开启
+          label:  開啟
         - value: "false"
-          label:  关闭
+          label:  關閉
         - value: ""
-          label:  跟随默认配置
+          label:  跟隨預設配置

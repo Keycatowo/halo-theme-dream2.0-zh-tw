@@ -4,22 +4,22 @@
         <div class="admire-content">
             <button th:if="${donate}" class="donate">
                 <i class="ri-bank-card-line"></i>
-                <span>打赏</span>
+                <span>打賞</span>
                 <div class="donate-list">
                     <ol>
                         <li th:if="${!#strings.isEmpty(theme.config.post.donate_alipay)}"><img
-                                th:src="${theme.config.post.donate_alipay}" alt="支付宝捐赠"></li>
+                                th:src="${theme.config.post.donate_alipay}" alt="支付寶捐贈"></li>
                         <li th:if="${!#strings.isEmpty(theme.config.post.donate_wechat)}"><img
-                                th:src="${theme.config.post.donate_wechat}" alt="微信捐赠"></li>
+                                th:src="${theme.config.post.donate_wechat}" alt="微信捐贈"></li>
                     </ol>
                 </div>
             </button>
             <button th:if="${type == 'Post'}" class="agree like" th:data-id="${post.metadata.name}"
                     th:data-likes="${post.stats.upvote}">
                 <i class="ri-thumb-up-line"></i>
-                <span>赞<span th:text="${post.stats.upvote}"></span></span>
+                <span>贊<span th:text="${post.stats.upvote}"></span></span>
             </button>
         </div>
-        <span>如果觉得文章对你有用，请随意赞赏</span>
+        <span>如果覺得文章對你有用，請隨意讚賞</span>
     </div>
 </th:block>

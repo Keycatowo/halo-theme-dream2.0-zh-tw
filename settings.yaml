@@ -5,312 +5,312 @@ metadata:
 spec:
   forms:
     - group: basic_info
-      label: '基础信息'
+      label: '基礎資訊'
       formSchema:
         - $formkit: text
           name: metadata_name
-          label: 作者用户名
-          placeholder: 请输入用户名
+          label: 作者使用者名稱
+          placeholder: 請輸入使用者名稱
           value: admin
-          help: 后台用户管理中作者的用户名，填写错误将导致个人资料显示异常（示例：admin）
+          help: 後臺使用者管理中作者的使用者名稱，填寫錯誤將導致個人資料顯示異常（示例：admin）
         - $formkit: text
           name: document_hidden_title
-          label: 离屏文案（离开）
-          placeholder: '请输入标题'
-          help: '浏览器切换到其它标签或后台时页面标题展示的文字。'
+          label: 離屏文案（離開）
+          placeholder: '請輸入標題'
+          help: '瀏覽器切換到其它標籤或後臺時頁面標題展示的文字。'
         - $formkit: text
           name: document_visible_title
-          label: 离屏文案（回来）
-          placeholder: '请输入标题'
-          help: '浏览器返回到当前标签时页面标题展示的文字。'
+          label: 離屏文案（回來）
+          placeholder: '請輸入標題'
+          help: '瀏覽器返回到當前標籤時頁面標題展示的文字。'
         - $formkit: text
           name: index_inform
-          label: 首页通知
-          placeholder: 请输入通知内容
-          help: '在首页显示一条通知。'
+          label: 首頁通知
+          placeholder: 請輸入通知內容
+          help: '在首頁顯示一條通知。'
         - $formkit: textarea
           name: copy_explain
-          label: 拷贝说明
-          placeholder: 请输入说明内容
-          help: '当用户拷贝文本时，自动将该文本内容追加到最后面。'
+          label: 複製說明
+          placeholder: 請輸入說明內容
+          help: '當使用者複製文字時，自動將該文字內容追加到最後面。'
         - $formkit: attachment
           name: night_logo
           label: '黑暗模式 Logo'
-          placeholder: '请输入/选择 Logo 路径'
-          help: '在黑暗模式时显示的 Logo，放空默认为网站 Logo。'
+          placeholder: '請輸入/選擇 Logo 路徑'
+          help: '在黑暗模式時顯示的 Logo，放空預設為網站 Logo。'
         - $formkit: text
           name: record_number
-          label: 备案号
-          placeholder: 'XICP备XXXXXXXXXX号-X'
+          label: 備案號
+          placeholder: 'XICP備XXXXXXXXXX號-X'
         - $formkit: text
           name: record_number_ps
-          label: 公安部备案
-          placeholder: 'X公网安备 XXXXXXXXXXXXXX号'
+          label: 公安部備案
+          placeholder: 'X公網安備 XXXXXXXXXXXXXX號'
         - $formkit: text
           name: website_time
-          label: 建站时间
+          label: 建站時間
           placeholder: 'YYYY/MM/dd HH:mm:ss'
-          help: '按YYYY/MM/dd HH:mm:ss格式输入时间进行倒计时，非时间格式则直接显示文本。'
+          help: '按YYYY/MM/dd HH:mm:ss格式輸入時間進行倒計時，非時間格式則直接顯示文字。'
         - $formkit: attachment
           name: cloud_by_logo
-          label: '云服务提供商 Logo'
-          placeholder: '请输入/选择 Logo 路径'
+          label: '雲服務提供商 Logo'
+          placeholder: '請輸入/選擇 Logo 路徑'
         - $formkit: text
           name: cloud_by_url
-          label: '云服务提供商 URL'
-          placeholder: '请输入链接地址'
+          label: '雲服務提供商 URL'
+          placeholder: '請輸入連結地址'
     - group: basic_style
-      label: '基础样式'
+      label: '基礎樣式'
       formSchema:
         - $formkit: radio
           name: load_progress
-          label: 加载进度条
+          label: 載入進度條
           value: center
-          help: '如果某个选项的背景图链接未指定，则不开启那个选项的背景图。'
+          help: '如果某個選項的背景圖連結未指定，則不開啟那個選項的背景圖。'
           options:
             - value: none
-              label: 不显示
+              label: 不顯示
             - value: left
-              label: 左侧展开
+              label: 左側展開
             - value: center
-              label: 居中展开
+              label: 居中展開
         - $formkit: radio
           name: drawer_toc
-          label: 侧边抽屉式目录
+          label: 側邊抽屜式目錄
           value: true
-          help: "在非桌面设备上，显示展开侧边抽屉式目录的悬浮按钮。"
+          help: "在非桌面裝置上，顯示展開側邊抽屜式目錄的懸浮按鈕。"
           options:
             - value: true
-              label: 显示
+              label: 顯示
             - value: false
-              label: 不显示
+              label: 不顯示
         - $formkit: radio
           name: enable_image_bg
-          label: 开启博客背景图
+          label: 開啟部落格背景圖
           value: false
-          help: '如果某个选项的背景图链接未指定，则不开启那个选项的背景图。'
+          help: '如果某個選項的背景圖連結未指定，則不開啟那個選項的背景圖。'
           options:
-            - label: 开启
+            - label: 開啟
               value: true
-            - label: 关闭
+            - label: 關閉
               value: false
         - $formkit: attachment
           name: background_pc
-          label: '明亮模式 PC 端背景图'
-          placeholder: '请输入/选择图片路径'
+          label: '明亮模式 PC 端背景圖'
+          placeholder: '請輸入/選擇圖片路徑'
         - $formkit: attachment
           name: background_mobile
-          label: 明亮模式移动端背景图
-          placeholder: '请输入/选择图片路径'
+          label: 明亮模式移動端背景圖
+          placeholder: '請輸入/選擇圖片路徑'
         - $formkit: attachment
           name: night_background_pc
-          label: '黑暗模式 PC 端背景图'
-          placeholder: '请输入/选择图片路径'
+          label: '黑暗模式 PC 端背景圖'
+          placeholder: '請輸入/選擇圖片路徑'
         - $formkit: attachment
           name: night_background_mobile
-          label: 黑暗模式移动端背景图
-          placeholder: '请输入/选择图片路径'
+          label: 黑暗模式移動端背景圖
+          placeholder: '請輸入/選擇圖片路徑'
         - $formkit: radio
           name: enable_banner
-          label: 开启博客横幅大图
+          label: 開啟部落格橫幅大圖
           value: false
           options:
-            - label: 开启
+            - label: 開啟
               value: true
-            - label: 关闭
+            - label: 關閉
               value: false
         - $formkit: attachment
           name: banner_image
-          label: 横幅背景图
-          placeholder: '请输入/选择图片路径'
+          label: 橫幅背景圖
+          placeholder: '請輸入/選擇圖片路徑'
         - $formkit: text
           name: banner_description
-          label: 横幅文字描述
-          placeholder: '请输入描述内容'
+          label: 橫幅文字描述
+          placeholder: '請輸入描述內容'
         - $formkit: select
           name: theme_style
-          label:  主题风格
+          label:  主題風格
           value: 'default'
-          help: '主题风格效果，不改变主题整体框架。'
+          help: '主題風格效果，不改變主題整體框架。'
           options:
             - value: 'default'
-              label:  默认
+              label:  預設
             - value: 'clean'
               label:  清爽
             - value: 'celebration'
-              label: 庆典
+              label: 慶典
         - $formkit: select
           name: default_theme
-          label:  默认主题模式
+          label:  預設主題模式
           value: 'light'
-          help: '未打开过博客的浏览器，首次打开博客时的默认主题模式。'
+          help: '未開啟過部落格的瀏覽器，首次開啟部落格時的預設主題模式。'
           options:
             - value: 'light'
               label:  明亮模式
             - value: 'night'
               label:  黑暗模式
             - value: 'system'
-              label:  跟随系统
+              label:  跟隨系統
         - $formkit: color
           name: theme_color
-          label:  明亮模式主题色
+          label:  明亮模式主題色
           value: '#50bfff'
         - $formkit: color
           name: night_theme_color
-          label:  黑暗模式主题色
+          label:  黑暗模式主題色
           value: '#5d93db'
         - $formkit: select
           name: web_font
-          label:  博客字体
+          label:  部落格字型
           value: 'default'
           options:
             - value: 'default'
-              label:  默认字体
+              label:  預設字型
             - value: 'WenCang.woff2'
-              label:  问藏书房体
+              label:  問藏書房體
             - value: 'AlimamaDaoLiTi.woff2'
-              label: 阿里巴巴刀隶体
+              label: 阿里巴巴刀隸體
             - value: 'custom'
-              label:  自定义
+              label:  自定義
         - $formkit: attachment
           name: custom_font
-          label: 自定义博客字体
-          placeholder: '请输入/选择字体路径'
-          help: '自定义博客字体，在博客字体选项为自定义时生效。支持woff2/woff/ttf/eot/svg格式的字体文件链接，建议使用woff2格式。'
+          label: 自定義部落格字型
+          placeholder: '請輸入/選擇字型路徑'
+          help: '自定義部落格字型，在部落格字型選項為自定義時生效。支援woff2/woff/ttf/eot/svg格式的字型檔案連結，建議使用woff2格式。'
         - $formkit: select
           name: sidebar_column
-          label:  博客布局方式
+          label:  部落格佈局方式
           value: 'all'
           options:
             - value: 'all'
               label:  三列布局
             - value: 'only-left'
-              label:  仅显示左侧
+              label:  僅顯示左側
             - value: 'only-right'
-              label:  仅显示右侧
+              label:  僅顯示右側
             - value: 'module-left'
-              label:  模块化（左侧）
+              label:  模組化（左側）
             - value: 'module-right'
-              label:  模块化（右侧）
+              label:  模組化（右側）
         - $formkit: repeater
           name: carousel_options
-          label: 首页大图轮播选项
+          label: 首頁大圖輪播選項
           children:
             - $formkit: text
               name: title
-              label: 标题
+              label: 標題
             - $formkit: text
               name: url
               label: 地址
             - $formkit: attachment
               name: image
-              label: 背景图
+              label: 背景圖
             - $formkit: radio
               name: target
-              label:  打开方式
+              label:  開啟方式
               value: '_blank'
               options:
                 - value: '_blank'
-                  label:  新窗口
+                  label:  新視窗
                 - value: '_self'
-                  label:  原窗口
+                  label:  原視窗
         - $formkit: repeater
           name: module_options
-          label: 模块化布局选项
-          help: 可填写 1~6 个链接。
+          label: 模組化佈局選項
+          help: 可填寫 1~6 個連結。
           children:
             - $formkit: text
               name: tag
-              label: 标签
+              label: 標籤
             - $formkit: text
               name: title
-              label: 标题
+              label: 標題
             - $formkit: text
               name: url
               label: 地址
             - $formkit: attachment
               name: image
-              label: 背景图
+              label: 背景圖
             - $formkit: radio
               name: target
-              label:  打开方式
+              label:  開啟方式
               value: '_blank'
               options:
                 - value: '_blank'
-                  label:  新窗口
+                  label:  新視窗
                 - value: '_self'
-                  label:  原窗口
+                  label:  原視窗
         - $formkit: radio
           name: left_sidebar_sticky
-          label:  左侧边栏悬浮
+          label:  左側邊欄懸浮
           value: bottom
           options:
             - value: top
-              label:  固定顶部
+              label:  固定頂部
             - value: bottom
               label:  固定底部
             - value: none
-              label:  不悬浮
+              label:  不懸浮
         - $formkit: radio
           name: right_sidebar_sticky
-          label:  右侧边栏悬浮
+          label:  右側邊欄懸浮
           value: top
           options:
             - value: top
-              label:  固定顶部
+              label:  固定頂部
             - value: bottom
               label:  固定底部
             - value: none
-              label:  不悬浮
+              label:  不懸浮
     - group: post
-      label: '文章设置'
+      label: '文章設定'
       formSchema:
         - $formkit: attachment
           name: default_thumbnail
-          label: 默认文章封面图
-          placeholder: '请输入/选择图片路径'
-          help: "如果文章没有指定封面图，则默认显示当前封面图。"
+          label: 預設文章封面圖
+          placeholder: '請輸入/選擇圖片路徑'
+          help: "如果文章沒有指定封面圖，則預設顯示當前封面圖。"
         - $formkit: select
           name: top_thumbnail_mode
-          label:  置顶文章列表封面图模式
+          label:  置頂文章列表封面圖模式
           value: back
-          help: '置顶的文章在列表的封面图模式，除网格布局外，如果文章元数据配置了thumbnail_mode项，则当前配置将被覆盖。注：设置网格布局后，非置顶文章也会变成网格布局。'
+          help: '置頂的文章在列表的封面圖模式，除網格佈局外，如果文章後設資料配置了thumbnail_mode項，則當前配置將被覆蓋。注：設定網格佈局後，非置頂文章也會變成網格佈局。'
           options:
             - value: default
-              label:  默认模式
+              label:  預設模式
             - value: back
-              label:  背景图模式
+              label:  背景圖模式
             - value: small
-              label:  小图模式（左侧）
+              label:  小圖模式（左側）
             - value: small-right
-              label:  小图模式（右侧）
+              label:  小圖模式（右側）
             - value: small-alter
-              label:  小图模式（交替）
+              label:  小圖模式（交替）
             - value: fold
-              label:  折叠模式
+              label:  摺疊模式
             - value: grid
-              label:  网格模式（强优先）
+              label:  網格模式（強優先）
         - $formkit: select
           name: thumbnail_mode
-          label:  文章列表封面图模式
+          label:  文章列表封面圖模式
           value: default
-          help: '文章列表封面图模式，除网格布局外，如果文章元数据配置了thumbnail_mode项，则当前配置将被覆盖。'
+          help: '文章列表封面圖模式，除網格佈局外，如果文章後設資料配置了thumbnail_mode項，則當前配置將被覆蓋。'
           options:
             - value: default
-              label:  默认模式
+              label:  預設模式
             - value: back
-              label:  背景图模式
+              label:  背景圖模式
             - value: small
-              label:  小图模式（左侧）
+              label:  小圖模式（左側）
             - value: small-right
-              label:  小图模式（右侧）
+              label:  小圖模式（右側）
             - value: small-alter
-              label:  小图模式（交替）
+              label:  小圖模式（交替）
             - value: grid
-              label:  网格模式（强优先）
+              label:  網格模式（強優先）
         - $formkit: select
           name: code_pretty
-          label:  代码块高亮主题
+          label:  程式碼塊高亮主題
           value: atom-one-light
           options:
             - value: a11y-dark
@@ -449,84 +449,84 @@ spec:
               label:  Xt 256
         - $formkit: number
           name: code_fold_line
-          label: 代码块折叠
-          placeholder: '请输入代码行数数值'
-          help: '代码行数超出指定行数后默认进行折叠，指定的行数需大于等于 20。'
+          label: 程式碼塊摺疊
+          placeholder: '請輸入程式碼行數數值'
+          help: '程式碼行數超出指定行數後預設進行摺疊，指定的行數需大於等於 20。'
         - $formkit: number
           name: img_fold_height
-          label: 正文长图折叠
-          placeholder: '请输入高度数值（px）'
-          help: '图片高度超出指定高度（px）后默认进行折叠，指定的高度需大于等于 400px。'
+          label: 正文長圖摺疊
+          placeholder: '請輸入高度數值（px）'
+          help: '圖片高度超出指定高度（px）後預設進行摺疊，指定的高度需大於等於 400px。'
         - $formkit: radio
           name: show_img_name
-          label: 显示图片名称
+          label: 顯示圖片名稱
           value: true
           options:
             - value: true
-              label: 开启
+              label: 開啟
             - value: false
-              label: 关闭
+              label: 關閉
         - $formkit: number
           name: invalid_tips_day
           label:  文章失效提示
           value: 99999999
-          placeholder: '请输入时间（天）'
-          help: '文章超过指定天数未进行更新，展示文章或图片可能失效的温馨提示。'
+          placeholder: '請輸入時間（天）'
+          help: '文章超過指定天數未進行更新，展示文章或圖片可能失效的溫馨提示。'
         - $formkit: radio
           name: enable_katex
-          label:  KaTeX 公式支持
+          label:  KaTeX 公式支援
           value: false
-          help: '博客通过 KaTeX 做数学公式渲染，如果文章或页面元数据配置了enable_katex项，则当前配置将被覆盖。'
+          help: '部落格透過 KaTeX 做數學公式渲染，如果文章或頁面後設資料配置了enable_katex項，則當前配置將被覆蓋。'
           options:
             - value: true
-              label:  默认开启
+              label:  預設開啟
             - value: false
-              label:  默认关闭
+              label:  預設關閉
         - $formkit: radio
           name: enable_copyright
-          label:  开启文章版权声明
+          label:  開啟文章版權宣告
           value: true
-          help: '如果文章或页面元数据配置了enable_copyright项，则当前配置将被覆盖。'
+          help: '如果文章或頁面後設資料配置了enable_copyright項，則當前配置將被覆蓋。'
           options:
             - value: true
-              label:  默认开启
+              label:  預設開啟
             - value: false
-              label:  默认关闭
+              label:  預設關閉
         - $formkit: radio
           name: enable_post_share
-          label:  开启文章分享
+          label:  開啟文章分享
           value: true
-          help: '如果文章或页面元数据配置了enable_share项，则当前配置将被覆盖。'
+          help: '如果文章或頁面後設資料配置了enable_share項，則當前配置將被覆蓋。'
           options:
             - value: true
-              label:  默认开启
+              label:  預設開啟
             - value: false
-              label:  默认关闭
+              label:  預設關閉
         - $formkit: radio
           name: enable_post_donate
-          label:  开启文章打赏
+          label:  開啟文章打賞
           value: true
-          help: '如果文章或页面元数据配置了enable_donate项，则当前配置将被覆盖。'
+          help: '如果文章或頁面後設資料配置了enable_donate項，則當前配置將被覆蓋。'
           options:
             - value: true
-              label:  默认开启
+              label:  預設開啟
             - value: false
-              label:  默认关闭
+              label:  預設關閉
         - $formkit: attachment
           name: donate_alipay
-          label: 支付宝捐赠二维码
-          placeholder: '请输入/选择图片路径'
+          label: 支付寶捐贈二維碼
+          placeholder: '請輸入/選擇圖片路徑'
         - $formkit: attachment
           name: donate_wechat
-          label: 微信捐赠二维码
-          placeholder: '请输入/选择图片路径'
+          label: 微信捐贈二維碼
+          placeholder: '請輸入/選擇圖片路徑'
     - group: sidebar
-      label: '侧边栏配置'
+      label: '側邊欄配置'
       formSchema:
         - $formkit: repeater
           name: sidebar_show
-          label: 侧边栏展示
-          help: 配置侧边栏展示方式，三列布局时不能在右侧显示音乐模块。
+          label: 側邊欄展示
+          help: 配置側邊欄展示方式，三列布局時不能在右側顯示音樂模組。
           value:
             - type: notice
               position: left
@@ -534,78 +534,78 @@ spec:
           children:
             - $formkit: select
               name: type
-              label: 模块类型
+              label: 模組型別
               value: "profile"
               options:
                 - value: 'profile'
-                  label:  信息模块
+                  label:  資訊模組
                 - value: 'toc'
-                  label:  目录模块
+                  label:  目錄模組
                 - value: 'notice'
-                  label:  公告模块
+                  label:  公告模組
                 - value: 'love'
-                  label:  恋爱墙模块
+                  label:  戀愛牆模組
                 - value: 'music'
-                  label:  音乐模块
+                  label:  音樂模組
                 - value: 'ad_piece'
-                  label:  广告模块
+                  label:  廣告模組
                 - value: 'recent_posts'
-                  label:  最近文章模块
+                  label:  最近文章模組
                 - value: 'recent_comments'
-                  label: 最近评论模块
+                  label: 最近評論模組
                 - value: 'categories'
-                  label:  文章分类模块
+                  label:  文章分類模組
                 - value: 'tags'
-                  label:  文章标签模块
+                  label:  文章標籤模組
                 - value: 'tagcloud'
-                  label:  文章标签云模块
+                  label:  文章標籤雲模組
             - $formkit: select
               name: position
-              label: 模块位置
+              label: 模組位置
               value: "none"
               options:
                 - value: left
-                  label:  左侧
+                  label:  左側
                 - value: right
-                  label:  右侧
+                  label:  右側
                 - value: none
-                  label:  关闭
+                  label:  關閉
             - $formkit: select
               name: hide
-              label: 隐藏方式
+              label: 隱藏方式
               value: "is-not-hidden"
               options:
                 - value: 'is-hidden-mobile'
-                  label:  移动设备隐藏
+                  label:  移動裝置隱藏
                 - value: 'is-hidden-not-desktop'
-                  label:  移动、平板设备隐藏
+                  label:  移動、平板裝置隱藏
                 - value: 'is-hidden-desktop'
-                  label:  桌面设备隐藏
+                  label:  桌面裝置隱藏
                 - value: 'is-not-hidden'
-                  label:  不隐藏
+                  label:  不隱藏
         - $formkit: radio
           name: enable_color_character
-          label:  侧边栏信息-开启彩字切换
+          label:  側邊欄資訊-開啟彩字切換
           value: false
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
         - $formkit: textarea
           name: color_character
-          label: 侧边栏信息-彩字内容
-          placeholder: 请输入彩字内容
+          label: 側邊欄資訊-彩字內容
+          placeholder: 請輸入彩字內容
           rows: 4
-          help: "按行输入彩字消息内容，一行一条。"
+          help: "按行輸入彩字訊息內容，一行一條。"
         - $formkit: text
           name: profile_location
-          label: 侧边栏信息-地理位置
-          placeholder: '请输入个人所在地'
+          label: 側邊欄資訊-地理位置
+          placeholder: '請輸入個人所在地'
         - $formkit: repeater
           name: custom_stats
-          label: 侧边栏信息-统计
-          help: 可最多配置3个统计项，未配置统计项时不显示。
+          label: 側邊欄資訊-統計
+          help: 可最多配置3個統計項，未配置統計項時不顯示。
           max: 3
           value:
             - type: post
@@ -614,45 +614,45 @@ spec:
           children:
             - $formkit: select
               name: type
-              label: 统计项
+              label: 統計項
               value: ""
               options:
                 - value: 'post'
-                  label:  文章数量
+                  label:  文章數量
                 - value: 'category'
-                  label:  分类数量
+                  label:  分類數量
                 - value: 'tag'
-                  label: 标签数量
+                  label: 標籤數量
                 - value: 'comment'
-                  label:  评论数量
+                  label:  評論數量
                 - value: 'upvote'
-                  label:  点赞数量
+                  label:  點贊數量
                 - value: 'visit'
-                  label:  访问数量
+                  label:  訪問數量
         - $formkit: text
           name: profile_theme_button
-          label: 侧边栏信息-主题按钮
-          placeholder: '按钮名称|按钮地址'
-          help: '需要按钮名称和按钮地址两个参数，参数间用 “|” 分隔，放空则不显示主题按钮。'
+          label: 側邊欄資訊-主題按鈕
+          placeholder: '按鈕名稱|按鈕地址'
+          help: '需要按鈕名稱和按鈕地址兩個引數，引數間用 “|” 分隔，放空則不顯示主題按鈕。'
         - $formkit: repeater
           name: custom_options
           label: 社交渠道
-          help: 图标目前仅支持 RemixIcon 5.3.0。
+          help: 圖示目前僅支援 RemixIcon 5.3.0。
           value:
             - name: QQ聊天
               icon: 'ri-qq-fill'
               url: tencent://message/?uin=${qq}&Site=&Menu=yes
-            - name: 给我发邮件
+            - name: 給我發郵件
               icon: 'ri-mail-fill'
-              url: mailto:邮箱地址
+              url: mailto:郵箱地址
           children:
             - $formkit: text
               name: name
-              label: 名称
+              label: 名稱
               value: ""
             - $formkit: text
               name: icon
-              label: 图标
+              label: 圖示
               value: ""
             - $formkit: textarea
               rows: 2
@@ -661,83 +661,83 @@ spec:
               value: ""
         - $formkit: textarea
           name: notice_content
-          label: 侧边栏公告-博客公告
-          placeholder: 请输入公告内容
-          help: 公告内容支持 HTML 标签。
+          label: 側邊欄公告-部落格公告
+          placeholder: 請輸入公告內容
+          help: 公告內容支援 HTML 標籤。
         - $formkit: radio
           name: notice_show_mode
-          label:  侧边栏公告-显示模式
+          label:  側邊欄公告-顯示模式
           value: index
-          help: 当满足指定的条件时公告模块才会显示。
+          help: 當滿足指定的條件時公告模組才會顯示。
           options:
             - value: none
-              label:  无条件
+              label:  無條件
             - value: toc
-              label:  目录模块不显示时
+              label:  目錄模組不顯示時
             - value: index
-              label:  仅首页
+              label:  僅首頁
         - $formkit: attachment
           name: love_oneself_avatar
-          label: 侧边栏恋爱墙-自己的头像
-          placeholder: '请输入/选择图片路径'
+          label: 側邊欄戀愛牆-自己的頭像
+          placeholder: '請輸入/選擇圖片路徑'
         - $formkit: text
           name: love_oneself_url
-          label: 侧边栏恋爱墙-自己的主页
-          placeholder: '请输入个人主页地址'
+          label: 側邊欄戀愛牆-自己的主頁
+          placeholder: '請輸入個人主頁地址'
         - $formkit: attachment
           name: love_opposite_avatar
-          label: 侧边栏恋爱墙-对方的头像
-          placeholder: '请输入/选择图片路径'
+          label: 側邊欄戀愛牆-對方的頭像
+          placeholder: '請輸入/選擇圖片路徑'
         - $formkit: text
           name: love_opposite_url
-          label: 侧边栏恋爱墙-对方的主页
-          placeholder: '请输入个人主页地址'
+          label: 側邊欄戀愛牆-對方的主頁
+          placeholder: '請輸入個人主頁地址'
         - $formkit: text
           name: love_time
-          label: 侧边栏恋爱墙-恋爱时间
+          label: 側邊欄戀愛牆-戀愛時間
           placeholder: 'YYYY/MM/dd HH:mm:ss'
-          help: '按YYYY/MM/dd HH:mm:ss格式输入时间进行倒计时，非时间格式则直接显示文本。'
+          help: '按YYYY/MM/dd HH:mm:ss格式輸入時間進行倒計時，非時間格式則直接顯示文字。'
         - $formkit: text
           name: meting_api
-          label: 侧边栏音乐-自建API
-          placeholder: '请输入 API 地址'
-          help: '自建 API 方法见文档：https://github.com/metowolf/Meting'
+          label: 側邊欄音樂-自建API
+          placeholder: '請輸入 API 地址'
+          help: '自建 API 方法見文件：https://github.com/metowolf/Meting'
         - $formkit: radio
           name: music_mode
-          label:  侧边栏音乐-音乐播放器配置方式
+          label:  側邊欄音樂-音樂播放器配置方式
           value: 'playlist'
           options:
             - value: 'playlist'
-              label:  '网易云歌单 ID'
+              label:  '網易雲歌單 ID'
             - value: 'config'
-              label:  参数进阶配置
+              label:  引數進階配置
         - $formkit: text
           name: netease_playlist_id
-          label: '侧边栏音乐-网易云歌单 ID'
-          placeholder: '请输入歌单 ID'
-          help: '填写网易云歌单的 ID。'
+          label: '側邊欄音樂-網易雲歌單 ID'
+          placeholder: '請輸入歌單 ID'
+          help: '填寫網易雲歌單的 ID。'
         - $formkit: textarea
           name: music_config
-          label:  侧边栏音乐-参数进阶配置
-          placeholder: '请输入音乐参数配置'
+          label:  側邊欄音樂-引數進階配置
+          placeholder: '請輸入音樂引數配置'
           value: |-
              list-folded="true"
              server="netease"
              type="playlist"
              id="7355014621"
-          help: '输入音乐参数配置(id / server / type必填)，详细配置方式见官方文档：https://github.com/metowolf/MetingJS/'
+          help: '輸入音樂引數配置(id / server / type必填)，詳細配置方式見官方文件：https://github.com/metowolf/MetingJS/'
         - $formkit: radio
           name: show_ad_tag
-          label:  侧边栏广告-显示“广告”标签
+          label:  側邊欄廣告-顯示“廣告”標籤
           value: true
           options:
             - value: true
-              label:  显示
+              label:  顯示
             - value: false
-              label:  不显示
+              label:  不顯示
         - $formkit: radio
           name: ad_tag_close
-          label:  侧边栏广告-点击“广告”标签可关闭广告
+          label:  側邊欄廣告-點選“廣告”標籤可關閉廣告
           value: true
           options:
             - value: true
@@ -746,309 +746,309 @@ spec:
               label:  否
         - $formkit: radio
           name: ad_mode
-          label:  侧边栏广告-广告展示方法
+          label:  側邊欄廣告-廣告展示方法
           value: true
           options:
             - value: true
-              label:  图片+链接
+              label:  圖片+連結
             - value: false
-              label:  自定义广告代码
+              label:  自定義廣告程式碼
         - $formkit: text
           name: ad_target_url
-          label:  侧边栏广告-广告目标地址
-          placeholder: '请输入链接地址'
-          help: '填写广告跳转的目标路径。'
+          label:  側邊欄廣告-廣告目標地址
+          placeholder: '請輸入連結地址'
+          help: '填寫廣告跳轉的目標路徑。'
         - $formkit: attachment
           name: ad_image
-          label:  侧边栏广告-广告图片链接
-          placeholder: '请输入/选择图片路径'
-          help: '图片+链接模式时不能为空。'
+          label:  側邊欄廣告-廣告圖片連結
+          placeholder: '請輸入/選擇圖片路徑'
+          help: '圖片+連結模式時不能為空。'
         - $formkit: textarea
           name: ad_custom_code
-          label:  侧边栏广告-自定义广告代码
-          placeholder: '请输入广告代码'
-          help: '在这里黏贴广告联盟提供的广告代码，自定义广告代码模式时不能为空。'
+          label:  側邊欄廣告-自定義廣告程式碼
+          placeholder: '請輸入廣告程式碼'
+          help: '在這裡黏貼廣告聯盟提供的廣告程式碼，自定義廣告程式碼模式時不能為空。'
         - $formkit: number
           name: recent_posts_num
-          label:  侧边栏最近文章-展示文章数量
-          placeholder: 请输入数量数值
+          label:  側邊欄最近文章-展示文章數量
+          placeholder: 請輸入數量數值
           value: 5
         - $formkit: number
           name: recent_comments_num
-          label:  侧边栏最近评论-展示评论数量
-          placeholder: 请输入数量数值
+          label:  側邊欄最近評論-展示評論數量
+          placeholder: 請輸入數量數值
           value: 5
         - $formkit: radio
           name: categories_more
-          label:  侧边栏分类-显示”更多”按钮
+          label:  側邊欄分類-顯示”更多”按鈕
           value: true
-          help: '超出展示的分类数量后是否显示更多按钮。'
+          help: '超出展示的分類數量後是否顯示更多按鈕。'
           options:
             - value: true
-              label:  显示
+              label:  顯示
             - value: false
-              label:  不显示
+              label:  不顯示
         - $formkit: number
           name: categories_num
-          label:  侧边栏分类-展示分类数量
-          placeholder: 请输入数量数值
+          label:  側邊欄分類-展示分類數量
+          placeholder: 請輸入數量數值
           value: 10
         - $formkit: radio
           name: tags_more
-          label:  侧边栏标签-显示”更多”按钮
+          label:  側邊欄標籤-顯示”更多”按鈕
           value: true
-          help: '超出展示的标签数量后是否显示更多按钮。'
+          help: '超出展示的標籤數量後是否顯示更多按鈕。'
           options:
             - value: true
-              label:  显示
+              label:  顯示
             - value: false
-              label:  不显示
+              label:  不顯示
         - $formkit: number
           name: tags_num
-          label:  侧边栏标签-展示标签数量
-          placeholder: 请输入数量数值
+          label:  側邊欄標籤-展示標籤數量
+          placeholder: 請輸入數量數值
           value: 18
         - $formkit: radio
           name: enable_tag_color
-          label:  侧边栏标签-开启标签颜色
+          label:  側邊欄標籤-開啟標籤顏色
           value: false
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
         - $formkit: radio
           name: tagcloud_more
-          label:  侧边栏标签云-显示”更多”按钮
+          label:  側邊欄標籤雲-顯示”更多”按鈕
           value: true
-          help: '超出展示的标签数量后是否显示更多按钮。'
+          help: '超出展示的標籤數量後是否顯示更多按鈕。'
           options:
             - value: true
-              label:  显示
+              label:  顯示
             - value: false
-              label:  不显示
+              label:  不顯示
         - $formkit: number
           name: tagcloud_num
-          label:  侧边栏标签云-展示标签数量
-          placeholder: 请输入数量数值
+          label:  側邊欄標籤雲-展示標籤數量
+          placeholder: 請輸入數量數值
           value: 32
         - $formkit: radio
           name: enable_tagcloud_color
-          label:  侧边栏标签云-开启标签颜色
+          label:  側邊欄標籤雲-開啟標籤顏色
           value: false
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
     - group: page_config
-      label: '页面设置'
+      label: '頁面設定'
       formSchema:
         - $formkit: attachment
           name: links_thumbnail
-          label: 友链页面-封面图
-          placeholder: '请输入/选择图片路径'
+          label: 友鏈頁面-封面圖
+          placeholder: '請輸入/選擇圖片路徑'
         - $formkit: attachment
           name: links_default_avatar
-          label: '友链页面-默认 Logo'
-          placeholder: '请输入/选择 Logo 路径'
-          help: "在加载用户 Logo 时、友链未设置 Logo 时、友链 Logo 加载失败时显示。"
+          label: '友鏈頁面-預設 Logo'
+          placeholder: '請輸入/選擇 Logo 路徑'
+          help: "在載入使用者 Logo 時、友鏈未設定 Logo 時、友鏈 Logo 載入失敗時顯示。"
         - $formkit: radio
           name: show_exchange_info
-          label: 友链页面-显示友链交换信息
+          label: 友鏈頁面-顯示友鏈交換資訊
           value: true
           options:
             - value: true
-              label: 显示
+              label: 顯示
             - value: false
-              label: 关闭
+              label: 關閉
         - $formkit: attachment
           name: links_blogger_avatar
-          label: '友链页面-交换信息自定义 Logo 链接'
-          placeholder: '请输入/选择 Logo 路径'
-          help: '用于交换友链的 Logo 链接。'
+          label: '友鏈頁面-交換資訊自定義 Logo 連結'
+          placeholder: '請輸入/選擇 Logo 路徑'
+          help: '用於交換友鏈的 Logo 連結。'
         - $formkit: code
           name: links_info
-          label: "友链页面-补充信息"
-          placeholder: '请输入补充信息'
-          help: '友链页面最低部的补充说明信息，支持 HTML 格式。'
+          label: "友鏈頁面-補充資訊"
+          placeholder: '請輸入補充資訊'
+          help: '友鏈頁面最低部的補充說明資訊，支援 HTML 格式。'
         - $formkit: radio
           name: link_enable_comment
-          label:  友链页面-开启评论区
+          label:  友鏈頁面-開啟評論區
           value: true
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
         - $formkit: singlePageSelect
           name: link_comment_id
-          label:  友链页面-评论区ID
-          placeholder: '请选择一个页面作为友链页面的评论区ID'
-          help: '友链页面没有 ID，需要指定一个自定义页面的 ID 用于评论，被指定的页面评论区将作为友链的评论区，未选择时则友链界面不显示评论区。'
+          label:  友鏈頁面-評論區ID
+          placeholder: '請選擇一個頁面作為友鏈頁面的評論區ID'
+          help: '友鏈頁面沒有 ID，需要指定一個自定義頁面的 ID 用於評論，被指定的頁面評論區將作為友鏈的評論區，未選擇時則友鏈介面不顯示評論區。'
         - $formkit: radio
           name: enable_tags_tag_color
-          label:  标签页面-开启标签颜色
+          label:  標籤頁面-開啟標籤顏色
           value: false
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
         - $formkit: number
           name: journals_fold_height
-          label:  瞬间页面-动态内容折叠
-          placeholder: '请输入高度数值（px）'
-          help: '动态内容高度超出指定高度后默认进行折叠，指定的高度需大于等于 260px。'
+          label:  瞬間頁面-動態內容摺疊
+          placeholder: '請輸入高度數值（px）'
+          help: '動態內容高度超出指定高度後預設進行摺疊，指定的高度需大於等於 260px。'
         - $formkit: radio
           name: enable_journals_comment
-          label:  瞬间页面-开启评论区
+          label:  瞬間頁面-開啟評論區
           value: true
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
         - $formkit: radio
           name: enable_journals_share
-          label:  瞬间页面-开启瞬间分享
+          label:  瞬間頁面-開啟瞬間分享
           value: true
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
         - $formkit: attachment
           name: journals_share_image
-          label: 瞬间页面-瞬间分享背景图
-          placeholder: '请输入/选择图片路径'
+          label: 瞬間頁面-瞬間分享背景圖
+          placeholder: '請輸入/選擇圖片路徑'
         - $formkit: radio
           name: enable_friends_stats
-          label:  朋友圈页面-开启朋友圈统计信息显示
+          label:  朋友圈頁面-開啟朋友圈統計資訊顯示
           value: true
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
     - group: enhance
-      label: '增强功能'
+      label: '增強功能'
       formSchema:
         - $formkit: select
           name: cursor_style
-          label:  鼠标风格
+          label:  滑鼠風格
           value: none
           options:
             - value: none
-              label: 关闭
+              label: 關閉
             - value: OwO
               label: OwO
             - value: UwU
               label: UwU
             - value: breeze
-              label: 清风（深色）
+              label: 清風（深色）
             - value: mellow
-              label: 卡通圆润
+              label: 卡通圓潤
             - value: water_01
               label: 彩虹水滴（一）
             - value: water_02
               label: 彩虹水滴（二）
             - value: horse
-              label: 彩虹小马
+              label: 彩虹小馬
             - value: debris
               label: 彩色碎片
             - value: overwatch
-              label: 守望先锋
+              label: 守望先鋒
             - value: rainbow_rain
-              label: 彩虹云雨
+              label: 彩虹雲雨
             - value: marry
-              label: 小樱茉莉
+              label: 小櫻茉莉
             - value: black_cat
-              label: 黑色小猫
+              label: 黑色小貓
             - value: music_cat_01
-              label: 音乐小猫（一）
+              label: 音樂小貓（一）
             - value: music_cat_02
-              label: 音乐小猫（二）
+              label: 音樂小貓（二）
         - $formkit: select
           name: cursor_move
-          label:  鼠标移动特效
+          label:  滑鼠移動特效
           value: none
           options:
             - value: none
-              label:  关闭
+              label:  關閉
             - value: bubbleCursor
-              label:  气泡跟随
+              label:  氣泡跟隨
             - value: emojiCursor
-              label:  表情包跟随
+              label:  表情包跟隨
             - value: springyEmojiCursor
-              label:  弹性表情包跟随
+              label:  彈性表情包跟隨
             - value: fairyDustCursor
               label:  仙女棒效果
             - value: snowflakeCursor
-              label:  雪花跟随
+              label:  雪花跟隨
             - value: followingDotCursor
-              label:  圆点跟随
+              label:  圓點跟隨
             - value: ghostCursor
-              label:  移动残影（疏）
+              label:  移動殘影（疏）
             - value: trailingCursor
-              label:  移动残影（密）
+              label:  移動殘影（密）
         - $formkit: select
           name: cursor_click
-          label:  鼠标点击特效
+          label:  滑鼠點選特效
           value: none
           options:
             - value: none
-              label:  关闭
+              label:  關閉
             - value: firework
-              label:  烟花特效
+              label:  煙花特效
             - value: granule
               label:  粒子爆炸
             - value: prosperous
-              label:  富强民主
+              label:  富強民主
             - value: heart
-              label:  爱心特效
+              label:  愛心特效
         - $formkit: radio
           name: enable_sw
-          label:  "启用 Service Worker 优化"
+          label:  "啟用 Service Worker 最佳化"
           value: "false"
-          help: "需要在 Nginx 中添加代理配置方可启用，配置方法见：https://blog.nineya.com/archives/104.html"
+          help: "需要在 Nginx 中新增代理配置方可啟用，配置方法見：https://blog.nineya.com/archives/104.html"
           options:
             - value: "false"
-              label: 关闭
+              label: 關閉
             - value: "&concurrent=true"
-              label: 开启并发CDN请求
+              label: 開啟併發CDN請求
             - value: "&cache=true"
-              label: 开启全站离线
+              label: 開啟全站離線
             - value: "&concurrent=true&cache=true"
-              label: 开启并发CDN与全站离线
+              label: 開啟併發CDN與全站離線
             - value: "uninstall"
-              label: 卸载
+              label: 解除安裝
         - $formkit: code
           name: sw_cdn_source
-          label: "Service Worker 并发 CDN 源"
-          placeholder: 请输入 CDN 地址（一行一个）
-          help: '填入可用的 NPM 公共开源 CDN 地址（一行一个），通过 “{CDN 地址}/{项目名}@{版本号}/${文件路径}” 可访问到文件，如：https://unpkg.com/halo-theme-dream@3.2.1/source/js/utils.min.js'
+          label: "Service Worker 併發 CDN 源"
+          placeholder: 請輸入 CDN 地址（一行一個）
+          help: '填入可用的 NPM 公共開源 CDN 地址（一行一個），透過 “{CDN 地址}/{專案名}@{版本號}/${檔案路徑}” 可訪問到檔案，如：https://unpkg.com/halo-theme-dream@3.2.1/source/js/utils.min.js'
           value: |-
             https://unpkg.com
             https://cdn.jsdelivr.net/npm
             https://npm.elemecdn.com
         - $formkit: radio
           name: enable_pjax
-          label:  Pjax 加载
+          label:  Pjax 載入
           value: false
-          help: '使用Pjax加载可极大提升页面跳转的速度，但可能和部分插件不兼容。'
+          help: '使用Pjax載入可極大提升頁面跳轉的速度，但可能和部分外掛不相容。'
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
         - $formkit: radio
           name: effects_lantern_mode
-          label:  喜庆灯笼特效显示模式
+          label:  喜慶燈籠特效顯示模式
           value: none
           options:
             - value: none
-              label:  不显示
+              label:  不顯示
             - value: day
               label:  明亮模式
             - value: night
@@ -1057,11 +1057,11 @@ spec:
               label:  全模式
         - $formkit: radio
           name: effects_sakura_mode
-          label:  樱花飘落特效显示模式
+          label:  櫻花飄落特效顯示模式
           value: day
           options:
             - value: none
-              label:  不显示
+              label:  不顯示
             - value: day
               label:  明亮模式
             - value: night
@@ -1070,11 +1070,11 @@ spec:
               label:  全模式
         - $formkit: radio
           name: effects_snowflake_mode
-          label:  雪花飘落特效显示模式
+          label:  雪花飄落特效顯示模式
           value: none
           options:
             - value: none
-              label:  不显示
+              label:  不顯示
             - value: day
               label:  明亮模式
             - value: night
@@ -1083,11 +1083,11 @@ spec:
               label:  全模式
         - $formkit: radio
           name: effects_universe_mode
-          label:  宇宙星空特效显示模式
+          label:  宇宙星空特效顯示模式
           value: night
           options:
             - value: none
-              label:  不显示
+              label:  不顯示
             - value: day
               label:  明亮模式
             - value: night
@@ -1096,11 +1096,11 @@ spec:
               label:  全模式
         - $formkit: radio
           name: effects_circle_magic_mode
-          label:  上升圆点特效显示模式
+          label:  上升圓點特效顯示模式
           value: none
           options:
             - value: none
-              label:  不显示
+              label:  不顯示
             - value: day
               label:  明亮模式
             - value: night
@@ -1111,82 +1111,82 @@ spec:
           name: enable_gray_mode
           label:  灰色模式
           value: false
-          help: '向英雄致敬，愿精神长存！'
+          help: '向英雄致敬，願精神長存！'
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
         - $formkit: radio
           name: enable_busuanzi
-          label:  开启 busuanzi 访客统计
+          label:  開啟 busuanzi 訪客統計
           value: true
-          help: '隐藏时不显示统计信息，但依旧会请求 busuanzi 统计访客信息。'
+          help: '隱藏時不顯示統計資訊，但依舊會請求 busuanzi 統計訪客資訊。'
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: hide
-              label: 隐藏
+              label: 隱藏
             - value: false
-              label:  关闭
+              label:  關閉
         - $formkit: radio
           name: enable_baidu_push
-          label:  启用百度 URL 自动推送
+          label:  啟用百度 URL 自動推送
           value: false
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
         - $formkit: radio
           name: enable_toutiao_push
-          label:  启用头条搜索自动推送
+          label:  啟用頭條搜尋自動推送
           value: false
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
         - $formkit: radio
           name: enable_debug
-          label:  开启 DEBUG 日志
+          label:  開啟 DEBUG 日誌
           value: false
-          help: '开发和问题排查时开启日志。'
+          help: '開發和問題排查時開啟日誌。'
           options:
             - value: true
-              label:  开启
+              label:  開啟
             - value: false
-              label:  关闭
+              label:  關閉
     - group: custom
-      label: '定制主题'
+      label: '定製主題'
       formSchema:
         - $formkit: text
           name: external_css
-          label: "外部 CSS 链接"
-          placeholder: 请输入 CSS 文件链接
-          help: "填入外部CSS链接，无需link标签，将插入head标签尾部。"
+          label: "外部 CSS 連結"
+          placeholder: 請輸入 CSS 檔案連結
+          help: "填入外部CSS連結，無需link標籤，將插入head標籤尾部。"
         - $formkit: code
           name: inline_css
-          label: "内嵌 CSS"
-          placeholder: 请输入 CSS 样式内容
-          help: '填入CSS代码，无需style标签，将插入head标签尾部。'
+          label: "內嵌 CSS"
+          placeholder: 請輸入 CSS 樣式內容
+          help: '填入CSS程式碼，無需style標籤，將插入head標籤尾部。'
         - $formkit: code
           name: external_js_head
-          label: "外部 JS 链接（head）"
-          placeholder: 请输入 script 标签
-          help: '填入外部JS链接，需要script标签，可按情况指定async和defer属性，将插入head标签尾部。'
+          label: "外部 JS 連結（head）"
+          placeholder: 請輸入 script 標籤
+          help: '填入外部JS連結，需要script標籤，可按情況指定async和defer屬性，將插入head標籤尾部。'
         - $formkit: code
           name: inline_js_head
-          label: "内嵌 JS（head）"
-          placeholder: 请输入 JS 代码内容
-          help: '填入JS代码，无需script标签，将插入head标签尾部。'
+          label: "內嵌 JS（head）"
+          placeholder: 請輸入 JS 程式碼內容
+          help: '填入JS程式碼，無需script標籤，將插入head標籤尾部。'
         - $formkit: code
           name: external_js_body
-          label: "外部 JS 链接（body）"
-          placeholder: 请输入 script 标签
-          help: '填入外部JS链接，需要script标签，可按情况指定async和defer属性，将插入body标签尾部。'
+          label: "外部 JS 連結（body）"
+          placeholder: 請輸入 script 標籤
+          help: '填入外部JS連結，需要script標籤，可按情況指定async和defer屬性，將插入body標籤尾部。'
         - $formkit: code
           name: inline_js_body
-          label: "内嵌JS（body）"
-          placeholder: 请输入 JS 代码内容
-          help: '填入JS代码，无需script标签，将插入body标签尾部。'
+          label: "內嵌JS（body）"
+          placeholder: 請輸入 JS 程式碼內容
+          help: '填入JS程式碼，無需script標籤，將插入body標籤尾部。'
